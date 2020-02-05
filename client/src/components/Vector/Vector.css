@@ -1,0 +1,19 @@
+.vector {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
+  justify-content: center;
+  color: #1d1d1d;  
+  background-image: url("https://images.vexels.com/media/users/3/148199/isolated/preview/8d2266d10c0de8283c9f225d7f7b045b-colorful-abstract-geometric-background-vector-by-vexels.png");
+
+}
+
+
+.gem > h1 {
+  color: #1d1d1d;
+  margin: 0;
+}

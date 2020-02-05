@@ -1,0 +1,54 @@
+.team {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1512577107354-cc925a586320?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.team-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.team-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  z-index: 4;
+}
+
+.team-hash-tag {
+}
+
+.team-main-text {
+  background-color: red;
+  color: #1d1d1d;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.tema-grid > h1 {
+  color: #fff;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .team {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .team {
+    min-height: 1000px;
+  }
+}

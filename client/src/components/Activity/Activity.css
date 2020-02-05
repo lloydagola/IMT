@@ -1,0 +1,240 @@
+.activity{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-bottom: #cccccc 1px solid;
+}
+
+.activity-container {
+  display: grid;
+  position: relative;   
+  width: 90%;
+  margin: 4em 0;
+  background: #fff;
+  justify-content: center;
+}
+
+.activity-container iframe{
+  grid-area: video;
+  width: 100%;
+  z-index: 111;
+  background-color:#333;
+}
+
+.activity-text{
+  grid-area: text;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #34495e;
+  background-color: #eeeeee;
+    
+}
+
+
+.activity .activity-title{
+  z-index: 3;
+  position: absolute;  
+  max-width: 240px;  
+  padding: 20px ;  
+  border: 5px solid #fff;  
+  display: grid;  
+  justify-self: center;  
+  margin: auto;
+}
+
+.activity-container h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.activity-container > img {
+  height: 100%;
+}
+
+.activity-jumbotron {
+  display: grid;
+  grid-template-columns: 4px 1fr 4px;
+  grid-template-rows: 4px 1fr 4px;
+  height: 2em;
+  width: 12em;
+  right: 0.4em;
+  bottom: 0.4em;
+  z-index: 2;
+  position: absolute;
+  background-color: #fff;
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .activity-container{    
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "video" "text";
+  }
+
+  .activity-container iframe{
+    height: 200px;
+  }
+
+  .activity-container .activity-title{  
+    padding: 16px ;   
+    max-width: 160px;  
+  }
+
+  
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+  .activity-container{    
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "video" "text";
+  }
+  .activity-container iframe{
+    height: 200px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  .activity-container{    
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "video" "text";
+  }
+  .activity-container iframe{
+    height: 200px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  .activity-container{    
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "video" "text";
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+  .activity-container {
+    width: 92%;  
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "video" "text";
+  }
+
+  .activity-container .activity-title {
+    padding: 16px;
+    max-width: 400px;
+}
+
+  
+
+  .activity-container > p {
+    display: flex;
+  }
+
+  .activity-jumbotron {
+    height: 3em;
+    width: 13em;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+  
+  .activity-container {
+    width: 92%;  
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "video" "text";
+  }
+
+  .activity-container iframe{
+    height: 520px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+  .activity-container {
+    width: 92%;  
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "video" "text";
+  }
+  .activity-container iframe{
+    height: 400px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+ .activity-container{
+  margin: 5em 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "video text";
+  height: 60vh;
+ }
+
+ .activity-container iframe{
+  height: 380px;
+  }
+
+  .activity-text{
+    padding: 32px;
+  }
+
+ .activity-container .activity-title{
+  max-width: 360px;
+  padding: 20px;
+ }
+
+ 
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  .activity-container {
+    margin: 8em 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "video text";
+    width: 66%;
+    height: 50vh;
+  }  
+
+  .activity-container iframe{
+    height: 480px;
+  }
+
+  .activity-container .activity-title {
+    padding: 80px;
+}
+
+  .activity-container > p {
+    display: flex;
+  }
+
+  .activity-jumbotron {
+    height: 3em;
+    width: 13em;
+  }
+}
+
+
+
+

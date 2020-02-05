@@ -1,0 +1,20 @@
+.slogan {
+  height: 24vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #1d1d1d;
+  padding: 2em;
+}
+
+.slogan > p {
+  color: #1d1d1d;
+  font-size: 2em;
+}
+
+/*laptops and large displays*/
+@media (min-width: 1200px) {
+  .slogan {
+    height: 60vh;
+  }
+}
