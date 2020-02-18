@@ -187,7 +187,7 @@ a {
 }
 
 a:hover {
-  background-color: #34495e;
+  background-color: #7B1FA2;
   color: #fff;
 }
 
@@ -212,6 +212,22 @@ a:hover {
   transition: 0.8s;
 }
 
+.flat-button-white a{
+  color: #fff;
+}
+
+.flat-button a{
+  color: #34495e;
+}
+
+.flat-button:hover a{
+  color: #fff;
+}
+
+.flat-button-white:hover a{
+  color: #7B1FA2;
+}
+
 .flat-button-yellow {
   border: #b3b3cc 1px solid;
 }
@@ -219,11 +235,22 @@ a:hover {
 .flat-button:hover,
 .flat-button-yellow:hover,
 .flat-button-white:hover {
-  color: #34495e;
-  background: #ffc001;
   transition: 0.8s;
   cursor: pointer;
-  border: #ffc001 2px solid;
+}
+.flat-button:hover {
+  color: #fff;
+  background: #7B1FA2;
+  transition: 0.8s;
+  cursor: pointer;
+  border: #7B1FA2 2px solid;
+}
+.flat-button-white:hover {
+  color: #7B1FA2;
+  background: #fff;
+  transition: 0.8s;
+  cursor: pointer;
+  border: #fff 2px solid;
 }
 
 .flat-button:focus,
@@ -243,6 +270,16 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.contacts{
+  background-color: #7B1FA2;
+  color: #fff;
+  height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Extra small devices (portrait phones, less than 576px)

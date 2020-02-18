@@ -1,4 +1,5 @@
 import React from "react";
+import WOW from 'wowjs';
 import {Featured, FeaturedInverse} from "../../components/Featured";
 
 const consultation = {
@@ -24,7 +25,11 @@ const travel = {
 
 
 export default class  Community extends React.Component {
-  componentDidMount = () => window.scrollTo(0, 0);
+  componentDidMount = () => {
+    window.scrollTo(0, 0);
+
+    new WOW.WOW().init();
+  }
   render() {
     return (
       <>   

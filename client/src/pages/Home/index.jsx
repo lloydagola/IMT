@@ -1,4 +1,5 @@
 import React from "react";
+import WOW from 'wowjs';
 import Welcome from "../../components/Welcome";
 import Summary from "../../components/Summary";
 import About from "../../components/About";
@@ -27,9 +28,14 @@ const travel = {
 
 
 
-export default class Home extends React.Component {
-  
-  componentDidMount = () => window.scrollTo(0, 0);
+export default class Home extends React.Component { 
+
+  componentDidMount = () => {
+    window.scrollTo(0, 0);
+
+    new WOW.WOW().init();
+  }
+
   render() {
     return (
       <>

@@ -1,4 +1,5 @@
 import React from "react";
+import WOW from 'wowjs';
 import Activity from "../../components/Activity";
 
 const PatientTestimonials = [
@@ -62,7 +63,11 @@ const PatientTestimonials = [
 ]
 
 export default class Testimonials extends React.Component {
-  componentDidMount = () => window.scrollTo(0, 0);
+  componentDidMount = () => {
+    window.scrollTo(0, 0);
+
+    new WOW.WOW().init();
+  }
   render() {
     return (
       <> 

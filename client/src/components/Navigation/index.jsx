@@ -13,6 +13,7 @@ const Navigation = props => (
             <NavLink exact activeClassName="a-active" to="/testimonials">Testimonials</NavLink >
             <NavLink exact activeClassName="a-active" to="/hospitals">Hospitals</NavLink >
             <NavLink exact activeClassName="a-active" to="/services">Services</NavLink >
+            <NavLink exact activeClassName="a-active" to="/Contacts">ContactUs</NavLink >
           </nav>
           
         </div>

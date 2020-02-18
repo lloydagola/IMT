@@ -3,7 +3,7 @@ import "./sidebar.css";
 
 const Sidebar = () => (
   <div
-    className="welcome-sidebar  wow fadeInDown "
+    className="welcome-sidebar"
   >
     <i className="fab fa-buffer font-36" />
     <div className="sidebar-spacer" />

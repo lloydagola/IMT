@@ -8,8 +8,7 @@ class Footer extends React.Component {
   render() {
     return (
       <section
-        className="footer wow fadeIn"
-      >
+        className="footer wow fadeIn" data-wow-duration=".5s" data-wow-delay=".5s">
         <div className="footer-wrapper dark-grey ">
           <div className="footer-logo">
               <div className="footer-logo-exterior white">

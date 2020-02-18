@@ -1,4 +1,5 @@
 import React from "react";
+import WOW from 'wowjs';
 import Description from "../../components/Description";
 
 const apollo_hospital_new_delhi = {
@@ -188,7 +189,11 @@ const fortis_hospital_chennai  = {
 }
 
 export default class About extends React.Component {
-  componentDidMount = () => window.scrollTo(0, 0);
+  componentDidMount = () => {
+    window.scrollTo(0, 0);
+
+    new WOW.WOW().init();
+  }
   render() {
     return (
       <>    

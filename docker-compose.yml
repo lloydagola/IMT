@@ -1,8 +1,8 @@
 version: '3'
 services:
     app:
-        container_name: docker-node-app
+        container_name: imt_website
         restart: always
         build: .
         ports:
-            - "3000:3000"
+            - "80:3000"
