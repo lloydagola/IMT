@@ -1,7 +1,8 @@
 import React from "react";
 import WOW from 'wowjs';
 import Welcome from "../../components/Welcome";
-import Summary from "../../components/Summary";
+import Hero from "../../components/Hero";
+import Brochure from "../../components/Brochure";
 import About from "../../components/About";
 import {Featured, FeaturedInverse} from "../../components/Featured";
 
@@ -39,8 +40,10 @@ export default class Home extends React.Component {
   render() {
     return (
       <>
+        <Hero />        
         <Welcome />        
         <About/>
+        <Brochure/>
         <Featured content={consultation} count={1}/>  
         <FeaturedInverse content={travel} count={2}/>  
         <Featured content={treatment} count={3}/>  

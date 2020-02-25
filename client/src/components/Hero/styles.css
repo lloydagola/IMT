@@ -1,0 +1,22 @@
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.hero-container video{
+    width: 98%;
+    height: 90vh;
+    margin: auto;
+}
+
+@media(min-width:1200px){
+    .hero-container video{
+        width: 80%;
+        height: 80vh;
+        margin: auto;
+    }
+
+}
